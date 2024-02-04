@@ -1,41 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Producto</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/listadoProductos.js"></script>
-    <script>src="js/validarProducto.js"</script>
-</head>
-<body>
-
-<div class="container mt-5">
-    <form id="productoForm">
-        <div class="form-group">
-            <label for="nombre">Nombre del Producto</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre del café">
-        </div>
-        <div class="form-group">
-            <label for="imagen">Imágen</label>
-            <input type="text" class="form-control" id="imagen" placeholder="Ingrese la ubicación de la imagen">
-        </div>
-        <div class="form-group">
-            <label for="descripcion">Descripción del Produto</label>
-            <textarea class="form-control" id="descripcion" rows="3" placeholder="Ingrese la descripción del producto"></textarea>
-        </div>
-        
-        <button type="button" class="btn btn-primary" onclick="validarYCrearProducto()">Crear Producto</button>
-    </form>
-</div>
-
-<!-- Archivos de Bootstrap y jQuery -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-<script>
-   function validarYCrearProducto() {
+function validarYCrearProducto() {
     // Obtener referencias a los campos del formulario
     let nombreInput = document.getElementById('nombre');
     let imagenInput = document.getElementById('imagen');
@@ -93,8 +56,3 @@ function showAlert(message, type) {
         alertDiv.remove();
     }, 3000);
 }
-
-</script>
-
-</body>
-</html>
